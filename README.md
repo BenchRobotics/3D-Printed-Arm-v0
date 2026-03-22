@@ -19,6 +19,22 @@ This guide will walk you through the entire process: mechanical assembly, wiring
 6. Do this for **all 6 servos** before attaching any plastic horns or gears to them!
 
 ---
+### 🔩 Hardware Guide: Screws & Fasteners
+
+Before you begin assembling the 3D printed parts, it is crucial to understand which screws go where. Using the wrong screw can crack the plastic or result in a loose joint.
+
+* **M3 Screws (For Large MG996R Servos):**
+    * **Purpose:** These are used to secure the main bodies of the three large MG996R servos (Waist, Shoulder, and Elbow) to the 3D printed structural parts.
+    * **Usage:** Pass these screws through the mounting tabs on the sides of the heavy servos and drive them directly into the corresponding holes on the 3D printed brackets.
+
+* **M2 Screws (For Small SG90 Servos & Servo Horns):**
+    * **Purpose:** You will use the small M2 screws that **come included in the baggie with your motors** for two things: mounting the bodies of the small SG90 micro servos (Wrist and Gripper), and attaching all the plastic servo horns to the 3D printed parts.
+
+* **⚠️ IMPORTANT: No Pre-Tapped Threads!**
+    * You will notice that the holes in the 3D printed parts do not have metal threads inside them. This is intentional! 
+    * The holes are specifically sized so that when you drive the metal screw in, it will **automatically cut its own threads** into the plastic. This "self-tapping" action creates a perfectly sized, highly secure fit that naturally locks the screw in place so it won't vibrate loose during operation.
+
+> **Pro-Tip for 3D Printed Parts:** *Never overtighten your screws!* Drive the screw in carefully while it cuts the plastic. Stop turning as soon as the screw head sits flush and feels snug. If you keep twisting forcefully past this point, you will strip out the brand-new threads you just created, and the screw will become permanently loose.
 
 ## 🛠️ Section 1: Mechanical Assembly Instructions
 
