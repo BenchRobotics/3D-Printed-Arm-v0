@@ -79,16 +79,51 @@ Take your time with assembly. Do not overtighten screws, as you risk cracking th
 4. Inside the wrist bracket, mount another SG90 servo facing forward. This is the **Wrist Roll** (twisting movement).
 
 ### Step 5: The Gripper
+
 ![3D Printed Gripper](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/3d-printed-gripper.png)
+
 <p align="center">
   <img src="https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/3D-PRINTED-GRIPPER-1.png" alt="3D Printed Gripper 1" width="300"/>
   <img src="https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/3D-PRINTED-GRIPPER-2.png" alt="3D Printed Gripper 2" width="300"/>
 </p>
 
-1. Attach the main gripper base to the Wrist Roll servo.
-2. Mount the final SG90 servo into the gripper base.
-3. Attach the central driving gear to the SG90 servo shaft.
-4. Mount the left and right planetary gears and the gripper fingers. Ensure the teeth mesh perfectly. When the servo is at 90 degrees (centered), the gripper claws should be exactly halfway open.
+The gripper uses a dual-gear linkage system. Because this mechanism relies on multiple pivot points, we will use **M3 machine screws and M3 nyloc (nylon-insert lock) nuts** for all the moving joints. 
+
+> **⚠️ CRITICAL PIVOT RULE:** Whenever you use a nyloc nut on a moving joint, **do not tighten it all the way down!** Tighten the nut just enough to hold the pieces securely together, but leave a tiny gap so the plastic links can rotate freely. The nylon ring inside the nut will prevent it from vibrating loose, even if it is not fully tightened.
+
+**1. Mount the Servo to the Base**
+* Take the main gripper base plate. 
+* Insert your final centered **SG90 micro servo** into the rectangular cutout. 
+* Secure the servo body to the base plate using the small M2 screws provided with the motor.
+
+**2. Attach the Active Gear Link**
+* Locate the **Active Gear Link** (this is the gear with an arm extending from it).
+* Attach a plastic servo horn to the back of this gear (using the M2 self-tapping screws), and then press the horn onto the SG90 servo shaft. 
+* Secure it with the tiny center screw. 
+
+**3. Attach the Passive Gear Link**
+* Locate the **Passive Gear Link** (the matching gear with an arm).
+* Place it onto the pivot hole on the base plate next to the active gear. 
+* **Alignment Check:** Because your servo is centered at 90 degrees, physically align the passive gear so that its extending arm mirrors the active gear perfectly (they should look symmetrical). The teeth of the two gears must mesh together.
+* Secure the passive gear to the base plate using an **M3 screw and a nyloc nut**. Ensure it can spin freely.
+
+**4. Attach the Gripper Claws (Outer Pivot)**
+* Take the two large, curved **Gripper Claws**.
+* Attach the outer mounting hole of each claw to the ends of the left and right gear link arms. 
+* Secure both pivot points using **M3 screws and nyloc nuts**. 
+
+**5. Attach the Inner Linkages**
+* Locate the two small, straight **Inner Linkage Arms**.
+* Connect one end of each inner linkage to the inner mounting holes on the Gripper Claws using **M3 screws and nyloc nuts**.
+* Connect the opposite ends of both inner linkages to the two central pivot holes located at the bottom center of the main base plate. Secure these final two joints with **M3 screws and nyloc nuts**.
+
+**6. Final Movement Check**
+* With the power entirely off, very gently try to open and close the claws with your fingers. 
+* The gears should turn smoothly together, and the linkages should pull the claws open and shut without binding. If you feel severe resistance, slightly loosen the nyloc nuts on the joints that are binding.
+
+**7. Attach to Wrist**
+* Finally, attach the fully assembled gripper base plate to the Wrist Roll servo on the main arm.
+
  ![3D Printed Gripper 3](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/3D-PRINTED-GRIPPER-3.png)
 
 
