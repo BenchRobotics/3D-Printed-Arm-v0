@@ -6,6 +6,10 @@ Welcome to the GitHub repository for our 6-Axis DIY Robotic Arm! This project is
 
 This guide will walk you through the entire process: mechanical assembly, wiring, uploading the code, and controlling your new robot using a smartphone app.
 
+## 📹 Click Here For Assembly Video
+
+[![Click here to watch the assembly video](https://img.youtube.com/vi/_B3gWd3A_SI/0.jpg)](https://www.youtube.com/watch?v=_B3gWd3A_SI)
+
 ---
 
 ## ⚠️ CRITICAL PRE-ASSEMBLY STEP: Centering Your Servos
