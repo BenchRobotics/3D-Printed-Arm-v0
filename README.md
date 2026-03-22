@@ -321,3 +321,53 @@ void runSavedPositions() {
     }
   }
 }
+```
+## 📱 Section 4: Smartphone App Setup & Usage
+
+This robotic arm is controlled wirelessly using a custom Android application built with MIT App Inventor. 
+
+*(Note: Currently, this specific app is only compatible with Android devices).*
+
+### Step 1: Download and Install the App
+Since this app is not on the Google Play Store, you will need to "sideload" the `.apk` file.
+
+1. **Download the APK:** Download the official `RobotArm_Control.apk` file from this repository (or from the original How To Mechatronics page).
+2. **Transfer to Phone:** If you downloaded it on your computer, transfer the file to your Android phone via USB, Google Drive, or email.
+3. **Enable Unknown Sources:** Before installing, you must allow your phone to install apps from outside the Play Store. 
+   * Go to your phone's **Settings** > **Security** (or **Apps** > **Special App Access** depending on your Android version).
+   * Find "Install Unknown Apps" and grant permission to your file manager or web browser.
+4. **Install:** Tap on the downloaded `.apk` file to install it. 
+
+### Step 2: Pair the HC-05 Bluetooth Module
+Before the app can talk to the robot, your phone's operating system needs to pair with the Bluetooth module.
+
+1. **Power On:** Turn on the external 5V power supply to your robot. 
+2. **Check the LED:** Look at your HC-05 module. It should have a red LED **blinking rapidly** (several times a second). This means it is in "Pairing Mode" and looking for a device.
+3. **Pair via Phone Settings:** * Open your Android phone's **Settings** > **Bluetooth**.
+   * Tap "Pair new device" or "Scan".
+   * Look for a device named **HC-05** (or sometimes a string of MAC address numbers) and tap it.
+4. **Enter the PIN:** It will ask for a pairing PIN. Enter **1234** or **0000** (these are the universal factory defaults for HC-05 modules).
+5. The device will now show up in your list of "Paired Devices". *(Note: The red LED on the module will STILL be blinking rapidly at this stage. That is normal).*
+
+### Step 3: Connect the App to the Robot
+1. Open the **Robot Arm Control** app on your phone.
+2. Tap the **Bluetooth Icon** at the top of the screen.
+3. A list of your paired Bluetooth devices will appear. Tap on **HC-05**.
+4. **Connection Success:** Look at the HC-05 module on your robot again. The red LED should now be giving a **short double-blink every few seconds**. This confirms the app is actively connected to the Arduino!
+
+### Step 4: Operating the Robot Arm
+* **Manual Control (Sliders):** The app features 6 sliders, each corresponding to one of the 6 servos. Gently move a slider left or right. Move them slowly at first to ensure the 3D-printed parts don't accidentally collide with each other!
+* **Speed Control:** Use the bottom-most slider to adjust the movement speed. Sliding it increases the delay between servo micro-steps, making the arm move slower and smoother.
+* **Recording Macros (Automated Sequences):**
+  1. Use the sliders to move the arm into your starting position. Tap the **SAVE** button.
+  2. Move the arm to the next position. Tap **SAVE**.
+  3. Repeat this process to record up to 50 sequential movements.
+  4. Tap **RUN** to execute the sequence. The Arduino will automatically loop through your saved positions indefinitely.
+  5. Tap **RESET** to wipe the Arduino's temporary memory so you can record a completely new sequence.
+
+---
+
+### 🛠️ Quick Troubleshooting
+* **The app connects, but the arm doesn't move:** Check your Arduino wiring. Make sure the RX pin on the Bluetooth module goes to the TX pin on the Arduino, and vice versa. Also, ensure the breadboard ground is shared with the Arduino ground.
+* **The arm jitters wildly when I move a slider:** Your power supply is too weak. The servos are pulling too much current, causing the Arduino to "brown out" and reset rapidly. Upgrade to a true 5V 3A (or higher) external power supply.
+* **Code won't upload to Arduino:** Unplug the RX and TX wires from Arduino pins 0 and 1 while uploading via USB. Plug them back in after the IDE says "Done Uploading."
