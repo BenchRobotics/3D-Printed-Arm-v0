@@ -23,16 +23,28 @@ This guide will walk you through the entire process: mechanical assembly, wiring
 Take your time with assembly. Do not overtighten screws, as you risk cracking the 3D-printed plastic. 
 
 ### Step 1: The Base (Waist)
+![Base Motor](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/basemotor.png)
+
 1. Take the large cylindrical base part. 
 2. Insert one of the large **MG996R servos** into the designated rectangular slot. Secure it with four M3 screws.
 3. Attach the circular rotating platform to the servo shaft using the plastic servo horn included with your servo. Secure it with the small center screw.
 
 ### Step 2: The Shoulder
+<p align="center">
+  <img src="https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/waistihorn.png" alt="Waist Horn" width="300"/>
+  <img src="https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/waist%20motor.png" alt="Waist Motor" width="300"/>
+</p>
+
 1. Place the lower shoulder bracket onto the rotating base. Secure it with screws.
 2. Insert the second **MG996R servo** into the shoulder bracket. 
 3. Attach the main lower arm link to this servo. This joint lifts the entire arm, so ensure the screw securing the arm link to the servo horn is tight.
 
 ### Step 3: The Elbow
+<p align="center">
+  <img src="https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/ELBOW.png" alt="Elbow" width="300"/>
+  <img src="https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/ELBOW-2.png" alt="Elbow 2" width="300"/>
+</p>
+
 1. At the top of the lower arm link, insert the third **MG996R servo**.
 2. Attach the upper arm link. Make sure the joints move smoothly without grinding against the plastic. Use sandpaper if any printed parts fit too tightly.
 
