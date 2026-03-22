@@ -1,6 +1,8 @@
-# Bench Robotics: DIY 6-DOF 3D Printed Robotic Arm 🤖
+# DIY 6-DOF 3D Printed Robotic Arm 🤖
 
-Welcome to the official Bench Robotics GitHub repository for our 6-Axis DIY Robotic Arm! This project is inspired by the fantastic open-source design from *How To Mechatronics* and optimized for accessible 3D printing and easy assembly.
+![Robot Arm](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/robotarm.png)
+
+Welcome to the GitHub repository for our 6-Axis DIY Robotic Arm! This project is inspired by the fantastic open-source design from *How To Mechatronics* and optimized for accessible 3D printing and easy assembly.
 
 This guide will walk you through the entire process: mechanical assembly, wiring, uploading the code, and controlling your new robot using a smartphone app.
 
@@ -49,16 +51,26 @@ Take your time with assembly. Do not overtighten screws, as you risk cracking th
 2. Attach the upper arm link. Make sure the joints move smoothly without grinding against the plastic. Use sandpaper if any printed parts fit too tightly.
 
 ### Step 4: The Wrist (Pitch and Roll)
+![Waist](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/WAIST.png)
+
 1. We are now switching to the smaller **SG90 Micro Servos**.
 2. Insert an SG90 servo into the end of the upper arm link. This is the **Wrist Pitch** (up and down movement).
 3. Attach the wrist bracket to this servo.
 4. Inside the wrist bracket, mount another SG90 servo facing forward. This is the **Wrist Roll** (twisting movement).
 
 ### Step 5: The Gripper
+![3D Printed Gripper](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/3d-printed-gripper.png)
+<p align="center">
+  <img src="https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/3D-PRINTED-GRIPPER-1.png" alt="3D Printed Gripper 1" width="300"/>
+  <img src="https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/3D-PRINTED-GRIPPER-2.png" alt="3D Printed Gripper 2" width="300"/>
+</p>
+
 1. Attach the main gripper base to the Wrist Roll servo.
 2. Mount the final SG90 servo into the gripper base.
 3. Attach the central driving gear to the SG90 servo shaft.
 4. Mount the left and right planetary gears and the gripper fingers. Ensure the teeth mesh perfectly. When the servo is at 90 degrees (centered), the gripper claws should be exactly halfway open.
+ ![3D Printed Gripper 3](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/3D-PRINTED-GRIPPER-3.png)
+
 
 ---
 
