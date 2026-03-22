@@ -52,6 +52,7 @@ Take your time with assembly. Do not overtighten screws, as you risk cracking th
 
 ## ⚡ Section 2: Wiring Instructions
 
+![Robot Arm Circuit Diagram](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/robot_arm_circuit_diagram.png)
 
 
 **IMPORTANT WARNING:** Do NOT power the 6 servos directly from the Arduino's 5V pin. The Arduino cannot provide enough current. You **must** use an external 5V power supply (minimum 3 Amps). 
@@ -323,6 +324,7 @@ void runSavedPositions() {
 }
 ```
 ## 📱 Section 4: Smartphone App Setup & Usage
+![Robot Arm Circuit Diagram](https://github.com/BenchRobotics/3D-Printed-Arm-v0/blob/main/Arm_images/robot_arm_app.png)]
 
 This robotic arm is controlled wirelessly using a custom Android application built with MIT App Inventor. 
 
